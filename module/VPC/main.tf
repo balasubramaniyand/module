@@ -13,7 +13,7 @@ resource "aws_vpc" "my_vpc" {
 
 resource "aws_subnet" "public_subnet1" {
   vpc_id          = aws_vpc.my_vpc.id
-  cidr_block      = var.public_subent1_cidr_block
+  cidr_block      = var.public_subnet1_cidr_block
   availability_zone = "ap-south-1a"
 
   tags = {
