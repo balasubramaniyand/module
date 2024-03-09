@@ -1,7 +1,7 @@
 variable "aws_region" {
   type = string
   description = "The AWS region to deploy the resources in."
-  default = "ap-south-1"  # Match the region in your main.tf configuration
+  default = "ap-southeast-1"  # Match the region in your main.tf configuration
 }
 
 variable "vpc_cidr_block" {
@@ -19,7 +19,7 @@ variable "public_subnet_cidr_block" {
 variable "availability_zone" {
   type = string
   description = "The availability zone to use for the subnet."
-  default = "ap-south-1a"  # Update this to a valid AZ for your chosen region
+  default = "ap-southeast-1a"  # Update this to a valid AZ for your chosen region
 }
 
 variable "instance_type" {
